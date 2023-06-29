@@ -1,0 +1,29 @@
+body {
+    overflow: hidden;
+    font-family: monospace;
+}
+textarea, #line {
+    outline: none;
+}
+textarea {
+    resize: none;
+}
+#lines, #code {
+    height: 25vh;
+    font-size: 10px;
+}
+#lines {
+    position: absolute;
+    overflow-y: hidden;
+    text-align: right;
+    width: 5em;
+}
+#code {
+    padding-left: calc(5em + 5px);
+}
+#run, #stop, #next {
+    display: none;
+}
+#data {
+    word-break: break-all;
+}

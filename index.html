@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webnasm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- TODO: syntax highlighting, more demos -->
+<body align="center">
+    <textarea id="lines" wrap="off" readonly></textarea>
+    <textarea id="code" wrap="off" cols="100" spellcheck="false"></textarea>
+    <br />
+    <canvas id="output"></canvas>
+    <br />
+    <button id="start">Start</button>
+    <label for="cycles">Delay:</label>
+    <input id="cycles" type="number" step="1" value="100" min="1" max="1000" required />
+    <button id="run">Run</button>
+    <button id="stop">Stop</button>
+    <input id="line" type="number" value="0" readonly />
+    <button id="next">Next</button>
+    <br />
+    <br />
+    <label for="break">Use breakpoints</label>
+    <input id="break" type="checkbox" checked>
+    <button id="resetBreakpoints">Reset Breakpoints</button>
+    <label for="toggle">Toggle text and hex</label>
+    <input id="toggle" type="checkbox" />
+    <br />
+    <br />
+    <textarea name="regs" id="regs" rows="11" readonly></textarea>
+    <textarea name="flags" id="flags" rows="11" readonly></textarea>
+    <textarea name="data" id="data" rows="11" readonly></textarea>
+    <textarea name="stack" id="stack" rows="11" readonly></textarea>
+    <br />
+    <label for="font-size">Font Size: </label>
+    <input type="range" id="font-size" min="10" max="20" step="1" value="10">
+    <script src="./index.mjs" type="module"></script>
+</body>
+</html>
